@@ -31,6 +31,7 @@ Button btn1,btn2;
              {
                  Toast.makeText(MainActivity.this, "LOGIN SCUCESS", Toast.LENGTH_SHORT).show();
                  Intent n =new Intent(MainActivity.this, Second.class);
+                 n.putExtra("abc",a);
                  startActivity(n);
              }
              else if(a.equals("") && b.equals("")) {
